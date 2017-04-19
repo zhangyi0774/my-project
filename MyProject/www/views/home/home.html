@@ -1,0 +1,203 @@
+<ion-view class="home">
+	<div class="header">
+		<header>
+			<span><img src="../../img/top_logo.png"/></span>
+			<span ui-sref="search"> <i class="ion-search"></i> 请输入关键字  </span>
+			<span><img src="../../img/message@2x.png"/></span>
+		</header>
+	</div>
+	<ion-content on-scroll="active()" class="has-header index">
+		<!--{{homeDatas}}-->
+		<!--{{homeDatas[2].adv_list.item}}-->
+		<ion-slide-box auto-play="true" slide-interval=500 does-continue="true" class="slidebox" delegate-handle="slideimgs" class="slidebox" on-slide-changed="slideHasChanged($index)" style="margin-top: -1px;">
+			<ion-slide class="slidebox-img" ng-repeat="it in homeDatas[2].adv_list.item">
+				<img src="{{it.image}}">
+			</ion-slide>
+		</ion-slide-box>
+		<div class="home-categogys">
+			<ul class="home-categogy">
+				<li>
+					<p><img src="../../img/cycd.png" /></p>
+					<span>茶艺茶道</span>
+				</li>
+				<li>
+					<p><img src="../../img/srdz-1.png" /></p>
+					<span>私人定制</span>
+				</li>
+				<li>
+					<p><img src="../../img/msfy.png" /></p>
+					<span>民俗非遗</span>
+				</li>
+				<li>
+					<p><img src="../../img/fsxb.png" /></p>
+					<span>服装箱包</span>
+				</li>
+				<li>
+					<p><img src="../../img/xhdg.png" /></p>
+					<span>鲜花蛋糕</span>
+				</li>
+				<li>
+					<p><img src="../../img/tcms.png" /></p>
+					<span>特产美食</span>
+				</li>
+				<li>
+					<p><img src="../../img/cylp.png" /></p>
+					<span>文化创意</span>
+				</li>
+				<li>
+					<p><img src="../../img/qyzq.png" /></p>
+					<span>企业专区</span>
+				</li>
+				<li>
+					<p><img src="../../img/zsjm.png" /></p>
+					<span>招商加盟</span>
+				</li>
+				<li>
+					<p><img src="../../img/hyzs.png" /></p>
+					<span>会员专享</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="tuijian">
+
+			<div class="tuijian-top">
+				<span><img src="../../img/line_r.png"/></span>
+				<span>爱之依推荐</span>
+				<span><img src="../../img/line_l.png"/></span>
+			</div>
+			<div class="tuijian-left-right" ng-repeat="tj in homeDatas[0]">
+				<div class="tuijian-left">
+					<img src="{{tj.square_image}}" />
+				</div>
+				<div class="tuijian-right">
+					<p class="tuijian-right-top">
+						<img src="{{tj.rectangle1_image}}" />
+					</p>
+					<p>
+						<img src="{{tj.rectangle2_image}}" />
+					</p>
+				</div>
+			</div>
+			<div class="tuijian-bottom">
+
+				<img src="{{homeDatas[1].home1.image}}" />
+			</div>
+		</div>
+
+		<div class="today">
+			<div class="today-title">
+				<p>
+					<span><img src="../../img/line.png"/></span>
+					<span>{{homeDatas[3].scroll_list.title}}</span>
+					<span><img src="../../img/line.png"/></span>
+				</p>
+				<p>
+					<span class="hours"></span> : <span class="minutes"></span> : <span class="seconds"></span> : <span class="millisecond">{{milli}}</span>
+				</p>
+			</div>
+			<div class="today-goods">
+				<div class="" ng-repeat="todayGood in homeDatas[3].scroll_list.item">
+					<img src="{{todayGood.image}}" />
+				</div>
+			</div>
+		</div>
+
+		<div class="xishihu">
+			<img src="{{homeDatas[4].home1.image}}" />
+		</div>
+
+		<!-- 文化类 • 民俗非遗 -->
+		<div class="culureList">
+			<div class="culureList-title">
+				<span><img src="../../img/line_r.png"/></span>
+				<span>{{homeDatas[5].goods.title}}</span>
+				<span><img src="../../img/line_l.png"/></span>
+			</div>
+			<div class="culureList-lists">
+				<div class="" ng-repeat="culureList in homeDatas[5].goods.item" >
+					<img src="{{culureList.goods_image}}" ui-sref="whl({id:culureList.goods_id})" />
+					<h2>{{culureList.goods_name}}</h2>
+					<section>
+						<p class="price">¥ {{culureList.goods_promotion_price}}</p>
+						<p class="same">看相似</p>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="laiyayinxiang">
+			<img src="{{homeDatas[6].home1.image}}" />
+		</div>
+
+		<!-- 创意类 • 文化创意 -->
+		<div class="culureList">
+			<div class="culureList-title">
+				<span><img src="../../img/line_r.png"/></span>
+				<span>{{homeDatas[7].goods.title}}</span>
+				<span><img src="../../img/line_l.png"/></span>
+			</div>
+			<div class="culureList-lists">
+				<div class="" ng-repeat="culureList in homeDatas[7].goods.item">
+					<img src="{{culureList.goods_image}}" />
+					<h2>{{culureList.goods_name}}</h2>
+					<section>
+						<p class="price">¥ {{culureList.goods_promotion_price}}</p>
+						<p class="same">看相似</p>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="laiyayinxiang">
+			<img src="{{homeDatas[8].home1.image}}" />
+		</div>
+
+		<!-- 特产类 • 特产美食 -->
+		<div class="culureList">
+			<div class="culureList-title">
+				<span><img src="../../img/line_r.png"/></span>
+				<span>{{homeDatas[9].goods.title}}</span>
+				<span><img src="../../img/line_l.png"/></span>
+			</div>
+			<div class="culureList-lists">
+				<div class="" ng-repeat="culureList in homeDatas[9].goods.item">
+					<img src="{{culureList.goods_image}}" />
+					<h2>{{culureList.goods_name}}</h2>
+					<section>
+						<p class="price">¥ {{culureList.goods_promotion_price}}</p>
+						<p class="same">看相似</p>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="laiyayinxiang">
+			<img src="{{homeDatas[10].home1.image}}" />
+		</div>
+
+		<!-- 精品推荐-->
+		<div class="culureList">
+			<div class="culureList-title">
+				<span><img src="../../img/line_r.png"/></span>
+				<span>{{homeDatas[11].goods.title}}</span>
+				<span><img src="../../img/line_l.png"/></span>
+			</div>
+			<div class="culureList-lists">
+				<div class="" ng-repeat="culureList in homeDatas[11].goods.item">
+					<img src="{{culureList.goods_image}}" />
+					<h2>{{culureList.goods_name}}</h2>
+					<section>
+						<p class="price">¥ {{culureList.goods_promotion_price}}</p>
+						<p class="same">看相似</p>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="end">
+			已经到最底了
+		</div>
+
+	</ion-content>
+	<div class="gongjian" ng-show="isShow" ng-click="backTop()">
+		<img src="../../img/gongjian.png" />
+	</div>
+
+</ion-view>

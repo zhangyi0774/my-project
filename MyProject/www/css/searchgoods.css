@@ -1,0 +1,139 @@
+.serachAll .fenlei{
+	text-align: center;
+	font-size: 1.3rem;
+	color: #686868;
+	margin-top: 0.15rem;
+}
+#serachAll{
+    height: 3.5rem;
+}
+.serachAll .fenlei p{
+	font-size: 0.57rem;
+	color: #636363;
+	position: relative;
+	bottom: 0.2rem;
+}
+.serachAll #more{
+	font-size: 1.7rem;
+	position: relative;
+	bottom: 0.4rem;
+	color: #636363;
+}
+.order{
+	display: flex;
+	justify-content: space-between;
+	padding:0.8rem  1rem;
+	border-bottom: solid 0.15rem #EEEEEE;
+	color: #888888;
+	font-size: 0.95rem;	
+}
+
+/*.order span:last-child*/
+.order span:last-child{
+	width: 1.3rem;
+	height: 1.3rem;
+	opacity: 0.5;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+}
+.aa{
+	background-image: url(../img/browse_list.png);	
+}
+.bb{
+   background-image: url(../img/browse_grid.png)
+}
+.one{
+	overflow: hidden;
+	background: #FFFFFF;
+}
+.one .lists-left{
+	width:30%;
+	float: left;
+	height: 8.4rem;
+	padding:0.5rem 0.5rem 0 0.5rem;
+
+}
+.one .lists-left img{
+	width: 100%;
+	height: 100%;
+
+}
+.one .lists-right{
+	width: 70%;
+	float: right;
+    border-bottom: solid 1px #EEEEEE;
+}
+.one .lists-right .jieshao{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #999999;
+}
+.one .lists-right h5{
+	font-size: 1rem;
+	color: #111111;
+}
+.one .lists-right p:nth-of-type(2){
+	color: #EC5464;
+}
+.one .lists-right p:nth-of-type(2) i{
+	font-size: 1.2rem;
+}
+.one .lists-right p:nth-of-type(3){
+	display: flex;
+	justify-content: space-between;
+	color:#999999 ;
+}
+.one .lists-right p:nth-of-type(3) i{
+	color: #000000;
+	font-weight: bold;
+}
+.one .lists-right p:nth-of-type(3) span:last-child{
+	padding-right: 2rem;
+}
+
+/*  第二种样式 */
+
+
+.two{
+	width: 45%;
+	float: left;
+	margin:0 0.5rem ;
+	
+}
+.two img{
+	width: 100%;
+/*	border: solid 1px black;*/
+	margin: 0.1rem 0.38rem;
+	
+}
+.two .jieshao{
+	display: none;
+}
+.two .shopname{
+	display: none;
+}
+.two .lists-right{
+	padding-left: 1.3rem;
+}
+.two h5{
+	font-size: 1rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	
+}
+.two .good-price{
+	color:#EC5464 ;
+}
+.two .good-price i{
+	font-size: 1.25rem;
+}
+.two .salenum{
+	color: #999999;
+}
+.two .salenum i{
+	color: black;
+	font-weight: bold;
+}

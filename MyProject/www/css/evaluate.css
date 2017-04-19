@@ -1,0 +1,94 @@
+.evaluate-container {
+	height: 100%;
+}
+
+.evaluate-title {
+	border-top: solid 1px #F5F5F5;
+	margin-top: 0.7rem;
+	background: #FFFFFF;
+}
+
+.evaluate-title ul {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.evaluate-title ul li {
+	display: inline-block;
+	text-align: center;
+	padding: 0.5rem 0.9rem;
+}
+
+.evaluate-title ul li span {
+	display: block;
+}
+
+.over {
+	color: #F9493C;
+}
+
+.evaluate-details {
+	background: #F5F5F5;
+	height: 100vh;
+}
+
+.evaluate-details-container {
+	background: #FFFFFF;
+	margin-bottom: 0.5rem;
+}
+
+.evaluate-user {
+	border-bottom: solid 1px #EEEEEE;
+	padding: 0.7rem;
+}
+
+.evaluate-user img {
+	width: 2rem;
+}
+
+.evaluate-user span {
+	position: relative;
+	bottom: 0.7rem;
+	margin-left: 1rem;
+}
+
+.evaluate-content {
+	padding: 0.7rem 0 0.5rem 0.7rem;
+}
+
+.evaluate-content .star img {
+	width: 0.8rem;
+}
+
+.evaluate-content p {
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+}
+
+.noEvaluate {
+	text-align: center;
+}
+
+.no-content {
+	padding-top: 12rem;
+}
+
+.no-content div {
+	background: #DDDDDD;
+	width: 4.5rem;
+	height: 4.5rem;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.no-content div img {
+	width: 60%;
+	position: relative;
+	top: 0.8rem
+}
+
+.no-content p {
+	color: #999999;
+}
+

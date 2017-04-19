@@ -1,0 +1,31 @@
+<ion-view>
+	<div class="hot-header">       
+			<div class="hot-container" style="width: 100%;height: 10rem;">
+				<img src="../../img/team-top.png" style="width: 100%;height: 100%;" />
+			</div>
+			<ion-list>
+				<ion-item class="item item-divider" style="margin-top: -10px;">
+					团爆阵列
+				</ion-item>
+			</ion-list>
+	</div>
+
+	<ion-content class="hotCon has-header">
+		<div class="hotGoods">
+			<div class="hot-goods" ng-repeat="hot in hots">
+				<section class="hot-img">
+					<img src="{{hot.goods_img}}" />
+				</section>
+				<section class="hot-detail">
+					<p class="hot-name">{{hot.goods_name}}</p>
+					<p class="hot-price">
+						<span>¥{{hot.group_price}}</span>
+						<span>¥{{hot.shop_price}}</span>
+					</p>
+					<p class="hot-dis">{{hot.discount}}折</p>
+					<p class="hot-buy">立即抢购</p>
+				</section>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

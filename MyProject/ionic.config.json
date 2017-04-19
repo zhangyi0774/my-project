@@ -1,0 +1,14 @@
+{
+	"name": "MyProject",
+	"app_id": "",
+	"proxies": [
+		{
+			"path": "/api",
+			"proxyUrl": "http://www.aizhiyi.com"
+		}, 
+		{
+			"path": "/mll",
+			"proxyUrl": "http://m.meilele.com"
+		}
+	]
+}

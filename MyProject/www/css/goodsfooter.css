@@ -1,0 +1,86 @@
+	.goods-footer {
+		width: 100%;
+		position: fixed;
+		bottom: 2.5rem;
+		height: 3rem;
+		
+	}
+	
+	.goods-footer .footer-left {
+		float: left;
+		width: 35%;
+		font-size: 0;
+		background: #F4F4F4;
+	}
+	
+	.goods-footer .footer-left span {
+		position: relative;
+		z-index: auto;
+		display: inline-block;
+		height: 3rem;
+		text-align: center;
+		color: #333;
+		border-top: solid 1px #DDD;
+	}
+	
+	.goods-footer .footer-left .kefu {
+		width: 44%;
+	}
+	
+	.goods-footer .footer-left .cart {
+		width: 55%;
+		border-left: solid 1px #DDD;
+	}
+	
+	.goods-footer .footer-left span i {
+		display: inline-block;
+		width: 1.2rem;
+		height: 1.2rem;
+		margin: 0.15rem auto 0.05rem auto;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 100%;
+		opacity: 0.65;
+	}
+	
+	.goods-footer .footer-left .kefu i {
+		background-image: url(../img/kefu_b.png);
+	}
+	
+	.goods-footer .footer-left .cart i {
+		background-image: url(../img/cart_b.png);
+	}
+	
+	.goods-footer .footer-left span p {
+		display: block;
+		height: 0.8rem;
+		font-size: 0.8rem;
+		line-height: 0.2rem;
+	}
+	
+	.goods-footer .footer-right {
+		float: right;
+		width: 65%;
+	}
+	
+	.goods-footer .footer-right span {
+		display: block;
+		height: 3rem;
+		font-size: 1rem;
+		font-weight: 600;
+		line-height: 3rem;
+		color: #FFF;
+		text-align: center;
+	}
+	
+	.goods-footer .footer-right .add-cart {
+		float: right;
+		width: 50%;
+		background-color: #f9493c;
+	}
+	
+	.goods-footer .footer-right .buy-now {
+		background-color: #f6cb02;
+		float: right;
+		width: 50%;
+	}

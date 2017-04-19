@@ -1,0 +1,61 @@
+<ion-view>
+	<ion-content class="content">
+		<div class="evaluate-container">
+			<div class="evaluate-title">
+				<ul>
+					<li class="over">全部<span>{{evaluates.goods_eval_list.length}}</span></li>
+					<li>好评<span>{{evaluates.goods_eval_list.length}}</span></li>
+					<li>中评<span>0</span></li>
+					<li>差评<span>0</span></li>
+					<li>晒图<span>0</span></li>
+				</ul>
+			</div>
+			<div class="evaluate-details">
+				<!--{{evaluates.goods_eval_list}}-->
+				<div class="evaluate-details-container" ng-if="evaluates.goods_eval_list.length>0" ng-repeat="evaluate in evaluates.goods_eval_list">
+					<section class="evaluate-user">
+						<img src="{{evaluate.member_avatar}}" />
+						<span>{{evaluate.geval_frommembername}}</span>
+					</section>
+					<div class="evaluate-content">
+						<span class="star">
+							<i ng-show='evaluate.geval_scores>= 1'><img src="../../img/star_r.png"/></i>
+							<i ng-show='evaluate.geval_scores>= 2'><img src="../../img/star_r.png"/></i>
+							<i ng-show='evaluate.geval_scores>= 3'><img src="../../img/star_r.png"/></i>
+							<i ng-show='evaluate.geval_scores>= 4'><img src="../../img/star_r.png"/></i>
+							<i ng-show='evaluate.geval_scores>= 5'><img src="../../img/star_r.png"/></i>
+						</span>
+						<p>{{evaluate.geval_content}}</p>
+					</div>
+				</div>
+				<div class="noEvaluate" ng-if="evaluates.goods_eval_list.length==0">
+					<div class="no-content">
+						<div class="">
+							<img src="../../img/mcc_04_w.png" />
+						</div>
+						<h4>该商品未收到任何评价</h4>
+						<p>期待您的购买与评论!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</ion-content>
+
+	<div class="goods-footer">
+		<div class="footer-left">
+			<span class="kefu"><i></i>
+					<p>客服</p>
+				</span>
+			<span class="cart"><i></i>
+					<p>购物车</p></span>
+		</div>
+		<div class="footer-right">
+			<span class="buy-now">立即购买</span>
+			<span class="add-cart">加入购物车</span>
+
+		</div>
+	</div>
+	
+
+</ion-view>

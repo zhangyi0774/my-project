@@ -1,0 +1,46 @@
+<ion-view style="background: #FFFFFF;">
+	<div>
+		<div class="serachAll" id="serachAll">
+			<span class="ion-ios-arrow-left" style="color: #636363;padding-top: 0.2rem;" ui-sref="search"></span>
+			<section>
+				<i class="ion-ios-search"></i>
+				<input type="text" placeholder={{keyWord}} />
+			</section>
+			<span class="ion-ios-list-outline fenlei"><p>分类</p></span>
+			<span class="ion-ios-more" id="more"></span>
+		</div>
+		<div class="order">
+			<span>综合排序 <i class="ion-android-arrow-dropdown"></i></span>
+			<span>销量优先</span>
+			<span>筛选 <i class="ion-android-arrow-dropdown"></i></span>
+			<span id="#span" ng-click="isChange=!isChange"  ng-class="{aa:isChange,bb:!isChange}"></span>
+		</div>
+	</div>
+	<ion-content class="has-header" style="margin-top: 3.5rem;background: #F5F5F5;">
+
+		<div class="goods-lists" >
+			<!--all-lists-->
+			<div ng-repeat="goodList in goodsLists" 
+				ng-class="{one:isChange,two:!isChange}">
+				<section class="lists-left">
+					<img src="{{goodList.goods_image_url}}" />
+
+				</section>
+				<section class="lists-right">
+					<h5>{{goodList.goods_name}}</h5>
+					<p class="jieshao">{{goodList.goods_jingle}}</p>
+					<p class="good-price">¥<i>{{goodList.goods_price}}</i></p>
+					<p>
+						<span class="salenum">销量 <i>{{goodList.goods_salenum}}</i></span>
+						<span class="shopname">{{goodList.store_name}}</span>
+					</p>
+				</section>
+			</div>
+		</div>
+		<ion-infinite-scroll on-infinite="loadMore()" distance="1%">
+		</ion-infinite-scroll>
+		
+
+	</ion-content>
+
+</ion-view>

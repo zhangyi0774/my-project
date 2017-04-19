@@ -1,0 +1,68 @@
+
+.hotCon{
+	margin-top: 9.3rem;
+}
+.hotGoods{
+	width:100%;	
+}
+.hot-goods{
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	padding: 0.5rem 0;
+	border-bottom:solid 0.15rem #F5F5F5;
+    width: 94%;
+    margin: 0 auto;
+   
+}
+
+.hot-goods .hot-img{
+	width: 40%;	
+	height: 7.5rem;
+	
+}
+.hot-goods .hot-img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.3rem;
+}
+
+.hot-goods .hot-detail{
+	width: 60%;
+	height: 7.5rem;
+	line-height: 1.3rem;
+	padding-left: 1rem;
+}
+.hot-goods .hot-detail .hot-name{
+	color: #7C7C7C;
+	font-size: 0.85rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.hot-goods .hot-detail .hot-price span:first-child{
+	color: #D53B37;
+	font-size: 0.9rem;
+	padding-right: 0.5rem;
+}
+.hot-goods .hot-detail .hot-price span:last-child{
+	text-decoration: line-through;
+	color: #AAAAAA;
+}
+.hot-goods .hot-detail .hot-dis{
+	width: 2.8rem;
+	text-align: center;
+	background: #DA0000;
+	color: white;
+	border-radius: 0.2rem;	
+	font-size: 1rem;
+}
+.hot-goods .hot-detail .hot-buy{
+	border: solid 1px #DA0000;
+	width: 100%;
+	text-align: center;
+	color: #DA0000;
+	border-radius: 0.25rem;
+	font-size: 1rem;
+}
+

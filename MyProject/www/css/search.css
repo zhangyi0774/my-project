@@ -1,0 +1,82 @@
+.search-container{
+	background: #F5F5F5;
+
+}
+
+.serachAll {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.8rem;
+	width: 100%;
+	background: #F5F5F5;
+}
+
+.serachAll span:first-child {
+	font-size: 2rem;
+}
+
+.serachAll span:last-child {
+	font-size: 1.2rem;
+	margin-top: 0.4rem;
+	cursor: pointer;
+}
+
+
+.serachAll section{
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+}
+.serachAll i {
+	font-size: 1.5rem;
+	position: relative;
+	left: 1.5rem;
+	bottom: -0.42rem;
+	color: #CBCBCF;
+}
+.serachAll input {
+	width: 100%;
+	padding-left: 1.7rem;
+	border-radius: 0.5rem;
+	border: solid 1px #CBCBCF ;
+	font-size: 1rem;
+}
+.hot-search h4,.search-history h4{
+	padding-left: 0.7rem;
+}
+.hot-search span{
+	display:inline-block;
+	border: solid 1px #F0F0F0;
+	background: #FFFFFF;
+	border-radius: 2rem;
+	font-size: 0.9rem;
+	padding: 0.4rem 0.8rem;
+	margin-left: 0.9rem;
+	margin-top: 0.5rem;
+}
+.search-history{
+	margin-top: 3rem;
+}
+.search-history span{
+	display:inline-block;
+	border: solid 1px #F0F0F0;
+	background: #FFFFFF;
+	font-size: 0.9rem;
+	padding: 0.4rem 0.8rem;
+	margin-left: 0.9rem;
+	margin-top: 0.5rem;
+}
+.clearHis{
+	width: 100%;
+	text-align: center;
+	margin-top: 5rem;
+}
+.clearHis button{
+	border: none;
+	width: 60%;
+	color: #555555;
+	padding: 0.7rem;
+	background: #EEEEEE;
+	border-radius: 0.3rem;
+	font-size: 1.2rem;
+}

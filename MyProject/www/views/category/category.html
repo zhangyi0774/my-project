@@ -1,0 +1,117 @@
+<ion-view class="menus">
+	<div class="serachAll" id="serachAll">
+		<section style="margin: 0 auto;">
+			<i class="ion-ios-search"></i>
+			<input type="text" placeholder="传统工艺制茶  正宗原产" />
+		</section>
+		<span class="ion-ios-more" id="more" style="margin-right:3rem;font-size: 2rem;opacity: 0.7;"></span>
+	</div>
+	<ion-content class="has-header category-left" style="margin-top: 1rem;">		
+		<div class="category-menus">
+			<ul class="left-menus">
+				<!--<li ng-repeat="img in image" ng-click=index($index)>
+					<img src="{{img.imgUrl}}" class="filter" />
+					<p>{{img.name}}</p>
+				</li>-->
+				<li class="onClick">
+					<img src="../../img/ci_1307.png" class="filter" /><br />
+					专馆基地
+				</li>
+				<li>
+					<img src="../../img/ci_1308.png" class="filter" />
+					<br />热门专区
+				</li>
+				<li>
+					<img src="../../img/ci_1378.png" class="filter" />
+					<br />传统工艺
+				</li>
+				<li>
+					<img src="../../img/ci_1383.png" class="filter" />
+					<br />民俗文化
+				</li>
+				<li>
+					<img src="../../img/ci_1379.png" class="filter" />
+					<br />茶艺茶道
+				</li>
+				<li>
+					<img src="../../img/ci_1382.png" class="filter" />
+					<br />特产美食
+				</li>
+				<li>
+					<img src="../../img/ci_1381.png" class="filter" />
+					<br />珠宝首饰
+				</li>
+				<li>
+					<img src="../../img/ci_1384.png" class="filter" />
+					<br />文化创意
+				</li>
+				<li>
+					<img src="../../img/ci_1309.png" class="filter" />
+					<br />个性定制
+				</li>
+			</ul>
+		</div>
+
+	</ion-content>
+    <!--<ion-content class="has-header">-->
+	<div class="category-right">
+		<ul class="firstLI" style="display: block;">
+			<li ng-repeat="store in stores">
+				<img src="{{store.store_avatar}}"/>
+				<p>{{store.store_name}}</p>
+			</li>
+		</ul>
+		<ul class="firstLI">
+			<li ng-repeat="rmzq in rmzqs" style="height: 5rem;" >
+				<img src="{{rmzq.imgUrl}}" style="height:80%;"/>
+				<p>{{rmzq.name}}</p>
+			</li>
+		</ul>
+		<ul class="secondLI">
+			<li ng-repeat="ctgy in ctgys">
+				<img src="{{ctgy.imgUrl}}"/>
+				<span ng-repeat="child in ctgy.child">{{child.gc_name}}</span>
+			</li>
+		</ul>
+		<ul class="secondLI">
+			<li ng-repeat="mswh in mswhs">
+				<img src="{{mswh.imgUrl}}"/>
+				<span ng-repeat="child in mswh.child">{{child.gc_name}}</span>
+			</li>
+		</ul>
+		<ul class="secondLI">
+			<li ng-repeat="cycd in cycds">
+				<img src="{{cycd.imgUrl}}"/>
+				<span ng-repeat="child in cycd.child">{{child.gc_name}}</span>
+			</li>
+		</ul>
+		<ul class="secondLI">
+			<li ng-repeat="tcms in tcmss">
+				<img src="{{tcms.imgUrl}}"/>
+				<span ng-repeat="child in tcms.child">{{child.gc_name}}</span>
+			</li>
+		</ul>
+		<ul class="secondLI">
+			 
+			<li ng-repeat="zbss in zbsss">
+				<img src="{{zbss.imgUrl}}"/>
+				<span ng-repeat="child in zbss.child">{{child.gc_name}}</span>
+			</li>
+			
+		</ul>
+		<ul class="secondLI">
+			<li ng-repeat="whcy in whcys">
+				<img src="{{whcy.imgUrl}}"/>
+				<span ng-repeat="child in whcy.child">{{child.gc_name}}</span>
+			</li>
+		</ul>
+		<ul class="secondLI">
+			<li ng-repeat="gxdz in gxdzs">
+				<img src="{{gxdz.imgUrl}}"/>
+				<span ng-repeat="child in gxdz.child">{{child.gc_name}}</span>
+			</li>
+		</ul>
+
+	</div>
+<!--</ion-content>-->
+</ion-view>
